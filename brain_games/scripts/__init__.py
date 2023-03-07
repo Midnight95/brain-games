@@ -1,1 +1,1 @@
-NAME= 'scripts'
+NAME = 'scripts'
