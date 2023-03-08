@@ -34,6 +34,7 @@ def game(name):
         else:
             print(f'{answer} is wrong answer ;(.'
                   f'Correct answer was {correct_answer}.')
+            print(f"Let's try again, {name}")
             break
     else:
         print(f'Congratulations, {name}!')
