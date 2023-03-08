@@ -9,14 +9,14 @@ def is_even(num):
 
 def game():
     question = randint(0, 100)
-    answer = input(f'Question: {question}\nYour answer: ')
     cond = is_even(question)
 
-    if answer == 'yes' and cond or answer == 'no' and not cond:
+    answer = input(f'Question: {question}\nYour answer: ')
+    if answer == ('yes' if cond else 'no'):
         print('Correct!')
     else:
-        ranswer = 'yes' if is_even(question) else 'no'
-        print(f'"{answer}" is wrong answer ;(. Correct answer was "{ranswer}".')
+        right_answ = 'yes' if cond else 'no'
+        print(f'{answer} is wrong answer ;(. Correct answer was {right_answ}.')
         return 'break'
 
 
