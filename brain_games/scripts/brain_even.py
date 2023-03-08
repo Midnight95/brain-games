@@ -15,14 +15,14 @@ def game():
     if answer == 'yes' and cond or answer == 'no' and not cond:
         print('Correct!')
     else:
-        right_answer = 'yes' if is_even(question) else 'no'
-        print(f'"{answer}" is wrong answer ;(. Correct answer was "{right_answer}".')
-        return ''
+        ranswer = 'yes' if is_even(question) else 'no'
+        print(f'"{answer}" is wrong answer ;(. Correct answer was "{ranswer}".')
+        return 'break'
 
 
 def start_game(name):
     for i in range(4):
-        if game() == '':
+        if game() == 'break':
             break
     else:
         print(f'Congratulations, {name}')
