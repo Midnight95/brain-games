@@ -9,7 +9,7 @@ def nums():
     return [num_1, num_2, operation]
 
 
-def calc():
+def generate_question():
     n1, n2, opr = nums()
 
     print(f'Question: {n1} {opr} {n2}')
@@ -23,16 +23,3 @@ def calc():
         correct_answer = n1 * n2
 
     return answer, correct_answer
-
-
-def game(name):
-    for _ in range(3):
-        answer, correct_answer = calc()
-        if answer == correct_answer:
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(.Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}")
-            return
-    else:
-        print(f'Congratulations, {name}!')
