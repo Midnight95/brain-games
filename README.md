@@ -8,7 +8,7 @@ python version 3.10.9
 prompt version 0.4.1
 
 ### package installation 
-You can install package with pip with this [command][pip3 install git+https://github.com/Midnight95/python-project-49.git]
+You can install package with pip with this [command](pip3 install git+https://github.com/Midnight95/python-project-49.git)
 
 Or just clone the repo and use Makefile
 [![asciicast](https://asciinema.org/a/FEHSSQOPSySkgST3d3cW6ZwfG.svg)](https://asciinema.org/a/FEHSSQOPSySkgST3d3cW6ZwfG)
