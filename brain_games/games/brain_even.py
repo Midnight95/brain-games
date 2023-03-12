@@ -1,38 +1,31 @@
-#!/usr/bin/env python3
-from brain_games.cli import welcome_user
 from random import randint
+
+# Game description
+MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(num):
     return num % 2 == 0
 
 
-def game():
-    question = randint(0, 100)
-    cond = is_even(question)
+def question():
+    num = randint(0, 100)
+    proof = is_even(num)
 
-    answer = input(f'Question: {question}\nYour answer: ')
-    if answer == ('yes' if cond else 'no'):
-        print('Correct!')
-    else:
-        right_answ = 'yes' if cond else 'no'
-        print(f'{answer} is wrong answer ;(. Correct answer was {right_answ}.')
-        return 'break'
+    return num, proof
 
 
-def start_game(name):
-    for i in range(4):
-        if game() == 'break':
-            break
-    else:
-        print(f'Congratulations, {name}')
+def game(name):
+    for _ in range(3):
+        num, proof = question()
 
+        answer = input(f'Question: {num}\nYour answer: ')
 
-def main():
-    name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    start_game(name)
+        if answer != ('yes' if proof else 'no'):
+            correct_answer = 'yes' if proof else 'no'
+            print(f'{answer} is wrong answer ;(. Correct answer was {correct_answer}.')
+            return
+        else:
+            print('Correct!')
 
-
-if __name__ == '__main__':
-    main()
+    print(f'Congratulations, {name}!')
