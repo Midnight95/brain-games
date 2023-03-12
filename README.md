@@ -17,9 +17,13 @@ Or just clone the repo and use Makefile
 
 ### Launch games
 `brain-even` Can you tell if the number is even?
+
 `brain-calc` Can you tell the expression result?
+
 `brain-gcd`  Can you find the greatest common divisor of two given numbers?
+
 `brain-progression` Can you find the missing number?
+
 `brain-prime` Can you tell if the number is prime?
 
 ## Gameplay examples
