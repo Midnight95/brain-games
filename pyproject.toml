@@ -1,12 +1,17 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "A set of 5 simple games to improve your mathematics abilities"
 authors = ["Ivan Granovsky <ivanator666@gmail.com>"]
 readme = "README.md"
 packages = [
     { include = "brain_games" },
 ]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+repository = "https://github.com/Midnight95/python-project-49.git"
 
 [tool.poetry.dependencies]
 python = "^3.10.9"
