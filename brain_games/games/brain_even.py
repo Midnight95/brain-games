@@ -29,7 +29,6 @@ def start_game(name):
 
 
 def main():
-    print('Welcome to the Brain Games!')
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     start_game(name)
