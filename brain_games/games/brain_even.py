@@ -18,7 +18,6 @@ def question():
 def game(name):
     for _ in range(3):
         num, proof = question()
-
         answer = input(f'Question: {num}\nYour answer: ')
 
         if answer != ('yes' if proof else 'no'):
