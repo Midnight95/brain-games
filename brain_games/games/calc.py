@@ -9,7 +9,7 @@ def nums():
     return [num_1, num_2, operation]
 
 
-def generate_question():
+def game_logic():
     n1, n2, opr = nums()
 
     print(f'Question: {n1} {opr} {n2}')

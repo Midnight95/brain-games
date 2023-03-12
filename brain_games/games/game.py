@@ -2,6 +2,6 @@
 from brain_games.cli import welcome_user
 
 
-def game():
+def game_logic():
     print('Welcome to the Brain Games!')
     welcome_user()

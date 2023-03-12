@@ -9,7 +9,7 @@ def start_game(module):
     print(module.MESSAGE)
 
     for _ in range(3):
-        answer, correct_answer = module.generate_question()
+        answer, correct_answer = module.game_logic()
         if answer == correct_answer:
             print('Correct!')
         else:

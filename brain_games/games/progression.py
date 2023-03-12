@@ -3,7 +3,7 @@ from random import randint, choice
 MESSAGE = "What number is missing in the progression?"
 
 
-def generate_question():
+def game_logic():
     length = randint(5, 16)
     step = randint(1, 11)
     progression = [str(step * i) for i in range(1, length + 1)]

@@ -3,7 +3,7 @@ from math import gcd
 MESSAGE = "Find the greatest common divisor of given numbers."
 
 
-def generate_question():
+def game_logic():
     num1, num2 = randint(0, 100), randint(0, 100)
     correct_answer = gcd(num1, num2)
 

@@ -8,7 +8,7 @@ def is_even(num):
     return num % 2 == 0
 
 
-def generate_question():
+def game_logic():
     num = randint(0, 100)
 
     print(f'Question: {num}')

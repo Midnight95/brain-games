@@ -1,6 +1,6 @@
 from random import randint
 
-MESSAGE = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
+MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -14,7 +14,7 @@ def is_prime(num):
     return True
 
 
-def generate_question():
+def game_logic():
     num = randint(0, 102)
 
     correct_answer = 'yes' if is_prime(num) else 'no'
