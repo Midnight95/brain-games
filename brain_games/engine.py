@@ -1,8 +1,11 @@
-from brain_games.cli import welcome_user
+import prompt
 
 
 def start_game(module):
-    name = welcome_user()
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
+    print(f"Hello, {name}!")
+
     print(module.MESSAGE)
 
     for _ in range(3):
