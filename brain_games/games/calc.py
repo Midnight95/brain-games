@@ -2,7 +2,6 @@ from random import randint, choice
 
 MESSAGE = "What is the result of the expression?"
 
-
 def nums():
     num_1, num_2 = randint(0, 100), randint(0, 100)
     operation = choice(['+', '-', '*'])
@@ -10,6 +9,7 @@ def nums():
 
 
 def game_logic():
+
     n1, n2, opr = nums()
 
     print(f'Question: {n1} {opr} {n2}')
