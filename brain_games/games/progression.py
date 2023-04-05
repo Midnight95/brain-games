@@ -1,11 +1,13 @@
 from random import randint, choice
 
-MESSAGE = "What number is missing in the progression?"
+MESSAGE = 'What number is missing in the progression?'
+LENGTH_RANGE = (5, 16)
+STEP_RANGE = (1, 11)
 
 
 def game_logic():
-    length = randint(5, 16)
-    step = randint(1, 11)
+    length = randint(*LENGTH_RANGE)
+    step = randint(*STEP_RANGE)
     progression = [str(step * i) for i in range(1, length + 1)]
 
     correct_answer = (choice(progression))

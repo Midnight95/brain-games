@@ -1,4 +1,5 @@
 import prompt
+ROUNDS = range(3)
 
 
 def start_game(module):
@@ -8,7 +9,7 @@ def start_game(module):
 
     print(module.MESSAGE)
 
-    for _ in range(3):
+    for _ in ROUNDS:
         answer, correct_answer = module.game_logic()
         if answer == correct_answer:
             print('Correct!')
