@@ -5,7 +5,7 @@ OPERATION = ['+', '-', '*']
 RANGE = (0, 50)
 
 
-def game_logic():
+def start_game():
     num_1, num_2, = randint(*RANGE), randint(*RANGE)
     operation = choice(OPERATION)
 

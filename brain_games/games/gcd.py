@@ -5,7 +5,7 @@ MESSAGE = 'Find the greatest common divisor of given numbers.'
 RANGE = (0, 100)
 
 
-def game_logic():
+def start_game():
     num1, num2 = randint(*RANGE), randint(*RANGE)
     correct_answer = gcd(num1, num2)
 

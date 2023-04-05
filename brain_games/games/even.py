@@ -9,7 +9,7 @@ def is_even(num):
     return num % 2 == 0
 
 
-def game_logic():
+def start_game():
     num = randint(*RANGE)
 
     print(f'Question: {num}')

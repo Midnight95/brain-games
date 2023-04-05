@@ -2,7 +2,7 @@ import prompt
 ROUNDS = range(3)
 
 
-def start_game(module):
+def play(module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -10,7 +10,7 @@ def start_game(module):
     print(module.MESSAGE)
 
     for _ in ROUNDS:
-        answer, correct_answer = module.game_logic()
+        answer, correct_answer = module.start_game()
         if answer == correct_answer:
             print('Correct!')
         else:

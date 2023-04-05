@@ -5,7 +5,7 @@ LENGTH_RANGE = (5, 16)
 STEP_RANGE = (1, 11)
 
 
-def game_logic():
+def start_game():
     length = randint(*LENGTH_RANGE)
     step = randint(*STEP_RANGE)
     progression = [str(step * i) for i in range(1, length + 1)]
