@@ -13,7 +13,6 @@ def start_game():
     correct_answer = (choice(progression))
 
     progression[progression.index(correct_answer)] = '..'
-    print(f'Question: {" ".join(progression)}')
-    answer = str(input('Your answer: '))
+    question = " ".join(progression)
 
-    return answer, correct_answer
+    return question, correct_answer

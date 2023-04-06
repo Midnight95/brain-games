@@ -16,11 +16,8 @@ def is_prime(num):
 
 
 def start_game():
-    num = randint(*RANGE)
+    question = randint(*RANGE)
 
-    correct_answer = 'yes' if is_prime(num) else 'no'
+    correct_answer = 'yes' if is_prime(question) else 'no'
 
-    print(f'Question: {num}')
-    answer = str(input('Your answer: '))
-
-    return answer, correct_answer
+    return question, correct_answer

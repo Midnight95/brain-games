@@ -10,10 +10,7 @@ def is_even(num):
 
 
 def start_game():
-    num = randint(*RANGE)
+    question = randint(*RANGE)
 
-    print(f'Question: {num}')
-    answer = input('Your answer: ')
-
-    correct_answer = 'yes' if is_even(num) else 'no'
-    return answer, correct_answer
+    correct_answer = 'yes' if is_even(question) else 'no'
+    return question, correct_answer

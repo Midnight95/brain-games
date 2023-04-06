@@ -7,9 +7,8 @@ RANGE = (0, 100)
 
 def start_game():
     num1, num2 = randint(*RANGE), randint(*RANGE)
-    correct_answer = gcd(num1, num2)
+    correct_answer = str(gcd(num1, num2))
 
-    print(f'Question: {num1} {num2}')
-    answer = int(input('Your answer: '))
+    question = ' '.join([str(num1), str(num2)])
 
-    return answer, correct_answer
+    return question, correct_answer
