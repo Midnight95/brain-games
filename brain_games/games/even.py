@@ -1,6 +1,5 @@
 from random import randint
 
-# Game description
 MESSAGE = 'Answer "yes" if the number is even, otherwise answer "no".'
 RANGE = (0, 100)
 
