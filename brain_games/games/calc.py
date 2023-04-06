@@ -13,4 +13,3 @@ def start_game():
     correct_answer = str(eval(question))
 
     return question, correct_answer
-
