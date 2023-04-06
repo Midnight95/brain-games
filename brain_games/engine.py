@@ -10,7 +10,11 @@ def play(module):
     print(module.MESSAGE)
 
     for _ in ROUNDS:
-        answer, correct_answer = module.start_game()
+        question, correct_answer = module.start_game()
+
+        print(f'Question: {question}')
+        answer = input('Your answer: ')
+
         if answer == correct_answer:
             print('Correct!')
         else:
