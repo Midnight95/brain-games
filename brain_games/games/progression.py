@@ -1,13 +1,13 @@
 from random import randint, choice
 
 MESSAGE = 'What number is missing in the progression?'
-LENGTH_RANGE = (5, 16)
-STEP_RANGE = (1, 11)
+RANGE_START, RANGE_END = 5, 16
+STEP_START, STEP_END = 1, 11
 
 
-def start_game():
-    length = randint(*LENGTH_RANGE)
-    step = randint(*STEP_RANGE)
+def build_question_answer_pair():
+    length = randint(RANGE_START, RANGE_END)
+    step = randint(STEP_START, STEP_END)
     progression = [str(step * i) for i in range(1, length + 1)]
 
     correct_answer = (choice(progression))

@@ -2,11 +2,11 @@ from random import randint
 from math import gcd
 
 MESSAGE = 'Find the greatest common divisor of given numbers.'
-RANGE = (0, 100)
+START, END = 0, 100
 
 
-def start_game():
-    num1, num2 = randint(*RANGE), randint(*RANGE)
+def build_question_answer_pair():
+    num1, num2 = randint(START, END), randint(START, END)
     correct_answer = str(gcd(num1, num2))
 
     question = ' '.join([str(num1), str(num2)])

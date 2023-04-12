@@ -1,7 +1,7 @@
 from random import randint
 
 MESSAGE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-RANGE = (0, 102)
+START, END = 0, 102
 
 
 def is_prime(num):
@@ -15,8 +15,8 @@ def is_prime(num):
     return True
 
 
-def start_game():
-    question = randint(*RANGE)
+def build_question_answer_pair():
+    question = randint(START, END)
 
     correct_answer = 'yes' if is_prime(question) else 'no'
 
