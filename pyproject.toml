@@ -9,7 +9,8 @@ packages = [
 ]
 classifiers = [
     "Topic :: Software Development :: Build Tools",
-    "Topic :: Software Development :: Libraries :: Python Modules"
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Games/Entertainment :: Puzzle Games"
 ]
 repository = "https://github.com/Midnight95/python-project-49.git"
 
