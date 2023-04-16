@@ -9,6 +9,6 @@ def build_question_answer_pair():
     num1, num2 = randint(START, END), randint(START, END)
     correct_answer = str(gcd(num1, num2))
 
-    question = ' '.join([str(num1), str(num2)])
+    question = f'{num1} {num2}'
 
     return question, correct_answer
