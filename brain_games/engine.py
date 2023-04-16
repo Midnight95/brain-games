@@ -13,7 +13,7 @@ def play_game(module):
         question, correct_answer = module.build_question_answer_pair()
 
         print(f'Question: {question}')
-        answer = input('Your answer: ')
+        answer = prompt.string('Your answer: ')
 
         if answer != correct_answer:
             print(f'\'{answer}\' is wrong answer ;(.'
